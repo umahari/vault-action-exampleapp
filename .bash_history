@@ -1,11 +1,3 @@
-apt-get update
-clear
-apt install unzip
-apt install wget
-clear
-wget https://releases.hashicorp.com/vault/1.6.0/vault_1.6.0_linux_amd64.zip
-ls
-unzip vault_1.6.0_linux_amd64.zip 
 ls
 mv vault /usr/bin
 clear
@@ -345,3 +337,164 @@ docker build . --file Dockerfile -t vault-action-exampleapp
 docker run vault-action-exampleapp /bin/bash -c "cat ./app_secret"
 vault server -dev -dev-root-token-id root
 vault kv put secret/ci app_secret=SecretProvidedByVault
+vault status
+export VAULT_ADDR=http://127.0.0.1:8200
+export VAULT_TOKEN=root
+vault kv put secret/ci app_secret=SecretProvidedByVault
+export VAULT_ADDR=http://127.0.0.1:8100
+export VAULT_TOKEN=root
+vault kv put secret/ci app_secret=SecretProvidedByVault
+clear
+vault server -dev -dev-root-token-id root
+valut status
+clear
+vault status
+vault kv put secret/ci app_secret=SecretProvidedByVault
+vault kv put kv/ci app_secret=SecretProvidedByVault
+export VAULT_TOKEN=s.8WY4rbEbErMLRDqKz6D9pUA0
+vault kv put kv/ci app_secret=SecretProvidedByVault
+vault kv get kv/ci
+vault policy write ci-secret-reader - <<EOF
+path "secret/data/ci" {
+    capabilities = ["read"]
+}
+EOF
+
+GITHUB_REPO_TOKEN=$(vault token create -policy=ci-secret-reader -format json | jq -r ".auth.client_token")
+apt install jq
+GITHUB_REPO_TOKEN=$(vault token create -policy=ci-secret-reader -format json | jq -r ".auth.client_token")
+VAULT_TOKEN=$GITHUB_REPO_TOKEN vault kv get kv/ci
+vault kv get kv/ci
+echo GITHUB_REPO_TOKEN=$(vault token create -policy=ci-secret-reader -format json | jq -r ".auth.client_token")
+echo GITHUB_REPO_TOKEN=$(vault token create -policy=ci-secret-reader -format json | jq -r ".auth.client_token")
+VAULT_TOKEN=$GITHUB_REPO_TOKEN vault kv get secret/ci
+VAULT_TOKEN=$GITHUB_REPO_TOKEN vault kv get kv/ci
+VAULT_TOKEN=s.SnzHRBS955nbJ9YPxwcEJEZS vault kv get kv/ci
+vault policy write ci-secret-reader - <<EOF
+path "secret/data/ci" {
+    capabilities = ["read"]
+}
+EOF
+
+vault policy write ci-secret-reader - <<EOF
+path "kv/data/ci" {
+    capabilities = ["read"]
+}
+EOF
+
+VAULT_TOKEN=$GITHUB_REPO_TOKEN vault kv get kv/ci
+git init
+git add .
+git commit -m "Initial Commit"
+git remote add origin https://github.com/umahari/vault-action-exampleapp.git
+git branch -M main
+git push -u origin main
+git push -u origin main
+echo GITHUB_REPO_TOKEN=$(vault token create -policy=ci-secret-reader -format json | jq -r ".auth.client_token")
+top
+mkdir -p .github/workflows
+tee .github/workflows/image-builder.yml <<EOF
+name: ImageBuilder
+# Run this workflow every time a new commit pushed to your repository
+
+on: push
+EOF
+
+tee -a .github/workflows/image-builder.yml <<EOF
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+EOF
+
+tee -a .github/workflows/image-builder.yml <<EOF
+      - uses: actions/checkout@v2
+EOF
+
+tee -a .github/workflows/image-builder.yml <<EOF
+      - name: Import Secrets
+        uses: hashicorp/vault-action@v2.0.1
+        with:
+          url: http://10.128.0.20:8100
+          tlsSkipVerify: true
+          token: \${{ secrets.VAULT_TOKEN }}
+          secrets: |
+            kv/data/ci app_secret
+EOF
+
+cat .github/workflows/image-builder.yml
+tee -a .github/workflows/image-builder.yml <<EOF
+      - name: Build Docker Image
+        run: docker build . --file Dockerfile --build-arg app_secret="\${{ env.APP_SECRET }}" -t vault-action-exampleapp
+EOF
+
+git add .
+git commit -m "adds workflow to repo"
+git push origin main
+git add .
+git push origin main
+git add .
+git commit -m "adds workflow to repo"
+git push origin main
+mkdir test.html
+git add .
+git commit -m "adds workflow to repo"
+ls
+rm -rf test.html/
+mkdir test.html
+git add test.html/
+git commit -m "adds workflow to repo"
+ls 
+rm -rf test.html/
+touch test.txt
+git add .
+git commit -m "adds workflow to repo"
+git push origin main
+cd /usr
+cd /bin/git
+cd /b
+cd /bin
+ls
+cat git
+top
+vault status
+clear
+vault status
+netstat -tlnp
+netstat -tlnp
+netstat -tlnup
+clear
+systemctl status vault
+netstat -tlnup
+systemctl stop vault
+systemctl status vault
+systemctl start vault
+systemctl status vault
+netstat -tlnup
+netstat -tlnup
+clear
+vault status
+nano .bashrc
+nano .bashrc
+export VAULT_ADDR=http://10.128.0.20:8100
+echo "export VAULT_ADDR=http://10.128.0.20:8100" >> ~/.bashrc
+vault status
+clear
+netstat -tlnup
+systemctl stop vault
+netstat -tlnup
+systemctl start vault
+netstat -tlnup
+systemctl enable vault
+netstat -tlnup
+netstat -tlnp
+clear
+systemctl status vault
+clear
+netstat -tlnp
+vault status
+netstat -tlnp
+cat .bashrc
+systemctl status vault
+clear
+exit

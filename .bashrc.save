@@ -16,5 +16,3 @@
 # alias rm='rm -i'
 # alias cp='cp -i'
 # alias mv='mv -i
-
-export VAULT_ADDR=http://10.128.0.20:8100
