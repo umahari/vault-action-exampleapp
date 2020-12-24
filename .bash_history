@@ -1,187 +1,3 @@
-ls
-mv vault /usr/bin
-clear
-sudo mkdir /etc/vault
-mkdir /vault-data
-mkdir -p /logs/vault/
-sudo vi /etc/vault/config.json
-sudo vi /etc/systemd/system/vault.service
-systemctl start vault
-systemctl status vault
-systemctl enable vault
-export VAULT_ADDR=http://10.128.0.20:8200
-export VAULT_ADDR=http://10.128.0.20:8100
-echo "export VAULT_ADDR=http://10.128.0.20:8100" >> ~/.bashrc
-vault status
-clear
-vault status
-vault -h
-clear
-vault init
-clear
-vault operator init
-cd /etc
-ls
-cd vault/config.json 
-cd vault/
-clear
-ls
-cat config.json 
-nano config.json 
-clear
-sysyemctl status vault
-systemctl status vault
-systemctl stop  vault
-systemctl systemctl daemon-reload
-systemctl status vault
-systemctl status daemon-reload
-clear
-systemctl start  vault
-systemctl status vault
-vault -h
-clear
-top
-top
-top
-vault 
-vault status
-clear
-vault operator init
-vault operator unseal dLRYxdK0/dbehXUOB/oSzmqfidm+J+cES7HxEVo00Sgc
-vault operator unseal XYoIcYur82hdXhmm/UYgOpbPSR9E99PCbxdKp0VLyiUp
-vault operator unseal 82aYBcX/pJZMDq9Wa5FyOmJ+N66rwgptfLxAgOsyvxHq
-vault status
-top
-clear
-vault kv put secret/hello foo=world
-clear
-vault policy list
-vault policy read default
-vault status
-clear
-top
-clear
-vault
-systemctl status vault
-clear
-vault status
-vault auth enable github
-vault auth enable github
-vault auth enable github
-clear
-vault write auth/github/config organization=git-umahari-GCP
-vault auth enable github
-vault auth enable github
-top
-clear
-vault 
-vault status
-clear
-vault auth enable github
-vault auth enable github
-export VAULT_TOKEN=s.8WY4rbEbErMLRDqKz6D9pUA0
-vault auth 
-vault auth enable github
-clear
-vault write auth/github/config organization=umahari
-/
-vault login -method=github token=93a4acdde5a2c57124c038938d30e014500722a1
-top
-clear
-vault write auth/github/config organization=GIt-sai-GCP
-vault login -method=github token=a8e0e2c82b75585cde16075c184e34f2a5162467
-top
-clear
-apt-get upadte
-apt-get update
-clear
-vault
-systemctl vault status
-systemctl status vault
-clear
-systemctl stop  vault
-systemctl staus  vault
-systemctl status vault
-systemctl stop  vault
-systemctl start vault
-systemctl status vault
-systemctl enable  vault
-systemctl status vault
-clear
-systemctl status vault
-tlnp
-sudo tlnup
-netstat -tlnp
-clear
-netstat -tlnp
-systemctl status vault
-cd /logs
-ls
-cd vault/
-ls
-ls -la
-cd /logs/vault/output.log
-cat output.log
-clear
-systemctl stop  vault
-systemctl status vault
-systemctl start  vault
-systemctl enable vault
-systemctl status vault
-clear
-cd 
-systemctl status vault
-ls
-cd /
-ls
-cd vault-data/
-ls
-cd logs
-cd /logs
-ls
-cat vault/
-cd vault/
-ls
-cd ../../etc
-cd vault/
-ls
-clear
-cat config.json 
-cd ../../logs/
-cd vault/
-ls
-systemctl status vault
-clear
-systemctl status vault
-ls 
-ls -la
-mkdir output.log error.log
-ls
-clear
-systemctl stop vault
-systemctl start vault
-systemctl status vault
-clear
-systemctl status vault
-netstat -tlnp
-netstat -tlnup
-clear
-vaults status
-vault status
-vault status
-systemctl enable vault
-systemctl status vault
-clear
-systemctl status vault
-ls
-cat error.log/
-cd error.log/
-ll
-ls
-cd ..
-rm -rf error.log/ output.log/
-clear
-cat /etc/systemd/system/vault.service
 clear
 systemctl status vault
 vault status
@@ -497,4 +313,188 @@ netstat -tlnp
 cat .bashrc
 systemctl status vault
 clear
+exit
+ls
+cd .github/
+ls
+cd workflows/
+ls
+nano image-builder.yml 
+cd 
+git add .
+git commit -m "message intial commit"
+git push origin main
+git remote add origin https://github.com/umahari/vault-action-exampleapp.git
+cd /usr/bin/git
+cd /usr/bin
+cat git
+clear
+cd 
+cd /usr/bin
+ls
+clear
+ls  -la
+cd 
+cd /
+ls
+cd ~
+ls
+cd vault-guides/
+ls
+cd ecosystem/
+ls
+cd vault-github-action/
+ls
+ls la
+ls -la
+clear
+vault status
+cd /var/logs
+cd /var/log/
+ls
+cd ../lib
+ls
+cd git/
+ls
+ls -la
+cd ..
+where git
+which git
+clear
+which git
+cd /usr/bin
+ls
+cd lo
+clear
+cd /usr/bin
+cd login
+cat login
+clear
+cd git
+ls
+clear
+git 
+git log
+clear
+ git log --since=5.hours
+cd /var/log
+ls
+cat faillog 
+cd faillog 
+cd lastlog 
+cat lastlog 
+cat auth.log 
+clear
+ls
+ git-log - Show commit logs
+sudo  git-log - Show commit logs
+sudo  git log - Show commit logs
+cat git log
+cat   git log - Show commit logs
+cd /var/log
+ls la
+la -la
+ls -la
+cat syslog.1
+cd .git/
+cd
+cd .git/
+ls
+cd config 
+cat config 
+cd logs/
+ls
+cat refs/
+cd refs/
+ls
+cd remotes/
+ls
+cd origin/
+ls
+cd main 
+cat main 
+cat main 
+cd
+git add .gitmodules
+cd .git
+ls
+cd 
+git rm --cached vault-guides
+ls
+git commit -m "trail"
+git push origin main
+locate ".gitmodule"
+locate ".gitmodules"
+ls
+cd vault-guides/
+ls
+cd plugins/
+ls
+cat vault-plugin-auth-mock/
+cd vault-plugin-auth-mock/
+ls
+cd
+ls
+cd /
+ls
+cd vault-data/
+ls
+cd auth/
+ls
+cd ../logs
+cd ../logs
+cd ../logs
+cd ../../logs/
+ls
+cd vault/
+ls
+ls -la
+cd 
+cd /etc/
+ls
+cd ../var
+ls
+cd /log
+cd log
+ls
+cd user.log 
+cat user.log 
+ls -la
+git -log
+git
+git log 
+cd 
+cd .git
+ls
+cd logs/
+ls
+cd 
+exit
+clear
+vault login -method=github token=a8e0e2c82b75585cde16075c184e34f2a5162467
+export VAULT_TOKEN s.8WY4rbEbErMLRDqKz6D9pUA0
+export VAULT_TOKEN "s.8WY4rbEbErMLRDqKz6D9pUA0"
+vault auth enable github
+export VAULT_TOKEN s.8WY4rbEbErMLRDqKz6D9pUA0
+clear
+export VAULT_TOKEN s.8WY4rbEbErMLRDqKz6D9pUA0
+vault status
+vault login -method=github token=a8e0e2c82b75585cde16075c184e34f2a5162467
+export VAULT_TOKEN s.8WY4rbEbErMLRDqKz6D9pUA0
+$ vault auth enable github
+$ vault auth enable github
+ vault auth enable github
+valut init
+vault init
+clear
+vault add .
+git add .
+clear
+ls
+cd vault-guides/
+ls
+cd 
+exit
+ls
+cd vault-guides/ls
 exit
